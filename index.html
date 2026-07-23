@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Fewer Days (Migraine & Symptom Tracker)</title>
+    <style>
+        :root {
+            --bg-color: #17151C;
+            --card-bg: #201D28;
+            --accent-color: #A78BC4;
+            --text-primary: #EDE9F2;
+            --text-secondary: #9C96AC;
+            --border-color: #2D2838;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            color: var(--text-primary);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-top: 0;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        p, li {
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-box {
+            background: rgba(167, 139, 196, 0.1);
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Fewer Days — Migraine & Symptom Tracker</p>
+            <p class="last-updated">Effective Date: July 22, 2026</p>
+        </header>
+
+        <section>
+            <h2>1. Introduction & Core Privacy Philosophy</h2>
+            <p>Welcome to <strong>Fewer Days</strong> ("we", "our", or "us"). We respect your privacy and are committed to protecting your sensitive personal health records and tracking data.</p>
+            <p><strong>Fewer Days is built with a local-first privacy architecture.</strong> Your symptom logs, migraine records, trigger factors, medications, and personal notes are stored locally on your device. We do not sell your personal data or track your behavior across third-party apps and websites for advertising.</p>
+        </section>
+
+        <section>
+            <h2>2. Information We Collect & How We Use It</h2>
+            <ul>
+                <li><strong>Local Symptom & Health Logs:</strong> Dates, migraine duration, pain severity (0–10), symptoms (nausea, aura, sensitivity), trigger tags (sleep, stress, weather, caffeine, cycle), medication entries, and personal notes. This data is stored strictly in your device's local encrypted SQLite database (Room).</li>
+                <li><strong>Optional Cloud Synchronization Data:</strong> If you choose to sign in with your Google Account, an encrypted copy of your logs and settings is backed up to Google Firebase Cloud Firestore to sync across your devices.</li>
+                <li><strong>Subscription & Purchase Data:</strong> When you purchase a Fewer Days Premium subscription, transaction processing is handled securely by the <strong>Google Play Billing API</strong>. We do not collect, process, or store your credit card or financial information.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. App Permissions</h2>
+            <p>Fewer Days requests only the essential Android system permissions required for operation:</p>
+            <ul>
+                <li><code>POST_NOTIFICATIONS</code> / <code>SCHEDULE_EXACT_ALARM</code>: Used strictly to schedule local daily log reminders at your chosen time.</li>
+                <li><code>INTERNET</code> & <code>ACCESS_NETWORK_STATE</code>: Required for Google Play Billing subscription validation and optional Google Cloud Sync.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Data Storage, Security & Retention</h2>
+            <p>Your local tracking logs remain on your device as long as the application is installed. You retain complete control over your data:</p>
+            <ul>
+                <li><strong>Data Deletion (GDPR Right to Erasure):</strong> You can permanently wipe all local database entries instantly inside the app via <strong>Settings &rarr; Delete All Data</strong>.</li>
+                <li><strong>Data Export:</strong> You can export a clean, printable PDF report of your tracking history for your personal doctor visits at any time.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Third-Party Services</h2>
+            <p>Fewer Days uses trusted infrastructure services strictly for application functionality:</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services & Google Play Billing</a> (Subscription & In-App Purchases)</li>
+                <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase & Firestore</a> (Optional cloud account backup)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Children's Privacy</h2>
+            <p>Fewer Days is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
+        </section>
+
+        <section>
+            <h2>7. Medical Disclaimer</h2>
+            <p>Fewer Days is a personal symptom logging tool designed to help you discover correlation patterns in your own data. It is not a medical device, and does not provide medical advice, diagnosis, or treatment recommendations. Always consult a qualified physician or doctor regarding any medical condition.</p>
+        </section>
+
+        <section>
+            <h2>8. Contact Us</h2>
+            <p>If you have any questions or concerns regarding this Privacy Policy or your data, please contact us at:</p>
+            <div class="contact-box">
+                <strong>Email Support:</strong> <a href="mailto:hermeslekkasdev@gmail.com">hermeslekkasdev@gmail.com</a><br>
+                <strong>App:</strong> Fewer Days (com.aistudio.fewerdays.zxyxw)
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Fewer Days. All rights reserved. Private, local-first symptom tracking.
+        </footer>
+    </div>
+</body>
+</html>
